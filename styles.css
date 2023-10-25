@@ -16,6 +16,7 @@
   width: 90%;
   font-size: 1.2rem;
   padding:0;
+  margin:4rem 0 0 0;
 }
 
 .text{
@@ -36,13 +37,37 @@
   flex-flow: column nowrap;
 }
 
+img{
+  width: 30%;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:100px;
+  width: 100%;
+  height: fit-content;
+  background-color:rgba(10, 0, 0, 0.6);
+}
+
+#ODIN{
+  color:white;
+  font-size:  max(40px,70px);
+  font-weight: 900;
+}
+
 .main{
   display:inline-block;
   height: 125vh;
   width: 60vw;
   flex-flow: column nowrap;
-  background: linear-gradient(135deg, #71b736, #9b59b6);
+  justify-content: center;
+  align-items: center;
+  background: white;
   overflow: hidden;
+  border: 1px solid blue;
 }
 
 .mid-container{
@@ -53,6 +78,7 @@
   border-radius: 5px;
   flex-flow: column nowrap;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+  margin:3rem 0 0 0;
 }
 
 #lets{
@@ -63,7 +89,7 @@
 
 .mid-content{
   display: flex;
-  flex-direction: row;
+  flex-direction: colum;
 }
 
 form{
@@ -90,18 +116,23 @@ form{
   display: block;
   font-weight: 500;
   margin-bottom:10px;
-  border: 1px solid red;
-  font-size: .9rem ;
+  font-size: .8rem ;
 }
 
 .create-account{
   padding:.5rem 2rem;
-  margin:2rem 2.5rem;
+  margin:2rem 1.9rem;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
   border-radius: 5px;
 }
 
 .bottom-text{
   display: flex;
-  gap:1rem;
+  gap:.4rem;
+  margin-left: 1.9rem;
+}
+
+.log-in{
+  text-decoration: none;
+  color:rgb(1, 63, 1);
 }
