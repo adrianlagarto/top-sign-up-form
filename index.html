@@ -26,39 +26,40 @@
           <p id="lets">Let's do this</p>
     <form action="#">
       <div class="input-container">
-        <label class="label" for="name">FIRSTNAME:</label>
-        <input placeholder="Firstname" class="input-data" type="text">
+        <label class="label" for="name">FIRSTNAME</label>
+        <input placeholder="Firstname" class="input-data" type="text" required>
       </div>
 
       <div class="input-container">
-        <label class="label" for="">LASTNAME:</label>
+        <label class="label" for="">LASTNAME</label>
         <input placeholder="Lastname" class="input-data" type="text" required>
       </div>
 
       <div class="input-container">
-        <label class="label" for="">EMAIL:</label>
+        <label class="label" for="">EMAIL</label>
         <input placeholder="Email" class="input-data" type="email" required>
       </div>
 
       <div class="input-container">
         <label class="label" for="">PHONE NUMBER</label>
-        <input placeholder="Phone Number" class="input-data" type="text" required>
+        <input placeholder="Phone Number" class="input-data" type="number" required>
       </div>
 
       <div class="input-container">
         <label class="label" for="">PASSWORD</label>
-        <input placeholder="Pawssword" class="input-data" type="text"required>
+        <input placeholder="Pawssword" class="input-data" type="password" id="password" required>
       </div>
 
       <div class="input-container">
         <label class="label" for="">COMFIRM PASSWORD</label>
-        <input placeholder="Comfirm Password" class="input-data" type="text" required>
+        <input placeholder="Comfirm Password" class="input-data" type="password" id="compassword" required>
+        <p id="message">p</p>
       </div>
     </div>
     
   
 
-    <div ><button class="create-account">Create Account</button></div>
+    <div ><button class="create-account" onclick="checkPassword()">Create Account</button></div>
   </form>
 
   <div class="bottom-text">
@@ -67,6 +68,8 @@
   </div> 
     </div>
   </div>
+
+  <script src="main.js"></script>
   
 </body>
 </html>
